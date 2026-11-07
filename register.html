@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+
+    <style>
+
+
+        h3{
+            text-align: left;
+            font-size: 30px;
+        }
+
+        
+        .c{ width: 20px;
+            height: 20px;
+        
+        }
+
+        .n{font-family: Angsana new;
+            font-size: 25px;
+        }
+
+        .f{ width: 300px;
+            height: 50px;}
+       
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+     <div class="gridcontainer">
+        <div class="item-h header">
+        <h1
+            style="color:white; font-size: 50px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                TakeCom</h1>
+        <img src="image/logo lis.png" alt="header1">
+
+        </div>
+
+
+        <div class="item-L">
+        <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        </ul>
+        <img src="image/L.png" alt="left" style="width:300px;height: 270px;">
+        
+        </div>
+
+
+        <div class="item-M">
+        
+        <img src="image/regis_m.png">
+        
+           
+                <h3>ลงทะเบียน (เลื่อนลงเพื่อกรอกข้อมูล)</h3>
+                <form action="https://httpbin.org/post" method="post">
+                   <div class="container mt-3">
+                        <label for="firstname" class="n">ชื่อ</label><br>
+                        <input type="text" id="firstname" name="user_name"><br>
+                         <br>
+                        <label for="lastname" class="n">นามสกุล</label><br>
+                        <input type="text" id="lastname" name="user_name"><br>
+                        <br>
+                        
+                        <label for="gender" class="n">เพศ</label><br>
+                        <div style="font-size: 25px;">
+                        <input type="radio" name="gender" value="ชาย">ชาย
+                        <input type="radio" name="gender" value="หญิง">หญิง
+                        <input type="radio" name="gender" value="ไม่ระบุ">ไม่ระบุ</div><br>
+                        
+                        <label for="birthday" class="n">วันเกิด</label><br>
+                        <input type="date" id="birthday" name="birthday_date"><br>
+                       
+                        <br>
+                        <label for="tel.no" class="n">เบอร์โทรศัพท์</label><br>
+                        <input type="text" id="tel.no" name="tel_no"><br>
+                        <br>
+                        <label for="email" class="n">Email address</label><br>
+                        <input type="email" id="email" name="email_ad"><br>
+                        <br>
+                        <label for="addresss" class="n">ที่อยู่(สำหรับจัดส่ง)</label><br>
+                        <textarea id="address" name="ad_dress" rows="5" cols="20" class="f"></textarea>
+  
+                        <br>
+                        <br>
+                        <input type="submit" value="เสร็จสิ้น">
+                   </div>  
+                    
+                </form>
+
+            </div>
+
+
+        
+
+
+
+        <div class="item-F">   
+        <address style="font-size: 15px;">
+            ร้าน TakeCom<br>
+            คณะศิลปศาสตร์ มหาวิทยาลัยธรรมศาสตร์ ศูนย์รังสิต<br>
+            99 หมู่ 18 ตำบลคลองหนึ่ง อำเภอคลองหลวง<br>
+            จังหวัดปทุมธานี 12121<br>
+            โทรศัพท์ 0-8888-9999
+        </address>
+        </div>
+    </div>
+</body>
+</html>
